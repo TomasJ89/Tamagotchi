@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="https://kit.fontawesome.com/01b32d7dee.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="index.js" defer></script>
+
+</head>
+<body>
+<div class="chooseAnimal text-center">
+    <h2>Select animal</h2>
+    <div class="animalsPlace d-flex flex-wrap gap-2 p-5"></div>
+    <div class="btn btn-success mt-3" id="play">Play</div>
+</div>
+<div class="game d-none p-3">
+    <div class="progressToolbars text-center d-flex gap-2 mb-3">
+        <div class="progressBar">
+            <b class="position-absolute">Health</b>
+            <div class="healthBar"></div>
+        </div>
+        <div class="progressBar">
+            <b class="position-absolute">Hungry</b>
+            <div class="hungryBar"></div>
+
+        </div>
+        <div class="progressBar">
+            <b class="position-absolute">Fun</b>
+            <div class="funBar"></div>
+        </div>
+    </div>
+    <div class="btn btn-primary" id="feed">Feed </div>
+    <div class="btn btn-primary"id="playWithPet">Play with Pet </div>
+    <div class="foodItems d-flex"></div>
+    <h4 class="pt-3">Level: 0</h4>
+    <div class="walkingPlace"></div>
+    <div class="p-5 d-flex flex-column align-items-center playingContainer d-none">
+        <h3>Points: 0</h3>
+        <div class="gameContainer"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
