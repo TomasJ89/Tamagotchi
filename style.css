@@ -45,6 +45,8 @@
 }
 
 .chooseAnimal {
+  width: 100vw;
+  height: 100vh;
   background-image: url("https://i.redd.it/zbcfsv2skfk61.png");
   background-size: cover;
   background-position: center;
